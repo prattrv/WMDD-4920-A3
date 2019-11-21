@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4920 A3</title>
+</head>
+<body>
+
+    <h1>Create Song</h1>
+    <form action='/songs' method='POST'>
+
+        <label>
+            Name:
+            <input type='text' name='name'>
+        </label>
+
+        <label>
+            minutes:
+            <input type='number' name='minutes' placeholder="minutes">
+        </label>
+
+        <label>
+            seconds:
+            <input type='number' name='seconds' placeholder="seconds">
+        </label>
+
+        <label>
+            Album name:
+            <input type='text' name='album_name'>
+        </label>
+
+        <input type="submit" value="Submit"/>
+    </form>
+
+  <ul>
+      <li><a href="/songs">/songs</a></li>
+      <li><a href="/song-stats/1">/song-stats/1</a></li>
+      <li><a href="/album-stats/1">/album-stats/1</a></li>
+      <li><a href="/band-stats">/band-stats</a></li>
+  </ul>
+</body>
+</html>
